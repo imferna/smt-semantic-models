@@ -1,0 +1,22 @@
+{
+  "furtherInformation" : { },
+  "technicalProperties" : { },
+  "productClassifications" : [ {
+    "ProductClassificationSystem" : "ECLASS",
+    "ClassificationSystemVersion" : "9.0 (BASIC)",
+    "ProductClassId" : "27-01-88-77"
+  } ],
+  "generalInformation" : {
+    "ManufacturerName" : "dfaJQNLcgh",
+    "ManufacturerLogo" : "https://example.com/f64INn",
+    "ManufacturerProductDesignation" : [ {
+      "en" : "kdE"
+    } ],
+    "ManufacturerArticleNumber" : "Z",
+    "ManufacturerOrderCode" : "hD3p1j9",
+    "ProductImages" : [ {
+      "value" : "https://example.com/SafetyInstructions.pdf",
+      "contentType" : "application/pdf"
+    } ]
+  }
+}

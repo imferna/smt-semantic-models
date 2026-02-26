@@ -27,11 +27,11 @@
     "NegativeEventValue" : "overcharged",
     "LastUpdate" : "2000-01-01T14:23:00"
   } ],
-  "InformationOnAccidents" : [ "apv" ],
+  "InformationOnAccidents" : [ "zBq4mhmrUB" ],
   "TemperatureInformation" : {
     "TimeExtremeHighTemp" : 0.0,
     "TimeExtremeLowTemp" : 0.0,
-    "TimeExtremeHighTempCharging " : 0.0,
+    "TimeExtremeHighTempCharging" : 0.0,
     "TimeExtremeLowTempCharging" : 0.0,
     "LastUpdate" : "2000-01-01T14:23:00"
   },
@@ -39,7 +39,7 @@
     "RemainingPowerCapabilityValue" : {
       "RPCLastUpdated" : "2000-01-01T14:23:00",
       "AtSoC" : 80.0,
-      "PowerCapabilityAt " : 95.0
+      "PowerCapabilityAt" : 95.0
     },
     "LastUpdate" : "2000-01-01T14:23:00"
   },
@@ -52,7 +52,7 @@
     "LastUpdate" : "2000-01-01T14:23:00"
   },
   "RemainingRoundTripEnergyEfficiency" : {
-    "RemainingRoundTripEnergyEfficiencyValue " : 80.0,
+    "RemainingRoundTripEnergyEfficiencyValue" : 80.0,
     "LastUpdate" : "2000-01-01T14:23:00"
   },
   "StateOfCharge" : {

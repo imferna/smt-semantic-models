@@ -41,7 +41,7 @@
       }
     },
     "IPCommunicationChannels" : [ {
-      "AddressOfAdditionalLink" : "ZfH",
+      "AddressOfAdditionalLink" : "eu",
       "TypeOfCommunication" : "Chat",
       "availableTime" : {
         "de" : "Montag – Freitag 08:00 bis 16:00"

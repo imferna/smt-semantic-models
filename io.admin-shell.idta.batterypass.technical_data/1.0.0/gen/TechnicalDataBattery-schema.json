@@ -455,7 +455,7 @@
         "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.batterypass.technical_data:1.0.0#Lifetime",
         "type" : "object",
         "properties" : {
-          "ExpectedLifetimeInCalendarYears " : {
+          "ExpectedLifetimeInCalendarYears" : {
             "description" : "The battery passport must include information about the expected battery lifetime in calendar years.\n\nThe update interval must be upon placement on the market and upon change of the battery status.\n\nDIN DKE Spec 99100 chapter reference: 6.7.6.2",
             "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.batterypass.technical_data:1.0.0#expectedLifetime",
             "$ref" : "#/components/schemas/ExpectedLifeTime"
@@ -481,7 +481,7 @@
             "$ref" : "#/components/schemas/CRateLifeCycleTest"
           }
         },
-        "required" : [ "ExpectedLifetimeInCalendarYears ", "ExpectedNumberOfCycles", "CapacityThresholdExhaustion", "CycleLifeReferenceTest", "CrateOfRelevantCycleLifeTest" ]
+        "required" : [ "ExpectedLifetimeInCalendarYears", "ExpectedNumberOfCycles", "CapacityThresholdExhaustion", "CycleLifeReferenceTest", "CrateOfRelevantCycleLifeTest" ]
       },
       "LifetimeCharacteristic" : {
         "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.batterypass.technical_data:1.0.0#LifetimeCharacteristic",

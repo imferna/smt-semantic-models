@@ -262,7 +262,7 @@
             "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.batterypass.product_condition:1.0.0#timeExtremeLowTemp",
             "$ref" : "#/components/schemas/TimeExtremeLowTemp"
           },
-          "TimeExtremeHighTempCharging " : {
+          "TimeExtremeHighTempCharging" : {
             "description" : "Cumulated time spent above the given upper boundary of temperature during Charging.",
             "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.batterypass.product_condition:1.0.0#timeExtremeHighTempCharging",
             "$ref" : "#/components/schemas/TimeExtremeHighTempCharging"
@@ -305,13 +305,13 @@
             "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.batterypass.product_condition:1.0.0#atSoC",
             "$ref" : "#/components/schemas/AtSoC"
           },
-          "PowerCapabilityAt " : {
+          "PowerCapabilityAt" : {
             "description" : "Defined by 'pre-use power capability (definition of power capability as given in Battery Regulation.",
             "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.batterypass.product_condition:1.0.0#powerCapabilityAt",
             "$ref" : "#/components/schemas/PowerCapabilityAtSoc"
           }
         },
-        "required" : [ "AtSoC", "PowerCapabilityAt " ]
+        "required" : [ "AtSoC", "PowerCapabilityAt" ]
       },
       "RemainingPowerCapabilityDynamicAt" : {
         "description" : "Remaining power capability dynamic at.",
@@ -428,7 +428,7 @@
         "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.batterypass.product_condition:1.0.0#RemainingRoundTripEnergyEfficiencyEntity",
         "type" : "object",
         "properties" : {
-          "RemainingRoundTripEnergyEfficiencyValue " : {
+          "RemainingRoundTripEnergyEfficiencyValue" : {
             "description" : "Percentage of energy that can be recovered and used after a full charge and discharge cycle, reflecting the battery's ability to retain and return energy efficiently over time.",
             "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.batterypass.product_condition:1.0.0#remainingRoundTripEnergyEfficiencyValue",
             "$ref" : "#/components/schemas/RemainingRoundTripEnergyEfficiencyValue"
@@ -439,7 +439,7 @@
             "$ref" : "#/components/schemas/Timestamp"
           }
         },
-        "required" : [ "RemainingRoundTripEnergyEfficiencyValue ", "LastUpdate" ]
+        "required" : [ "RemainingRoundTripEnergyEfficiencyValue", "LastUpdate" ]
       },
       "RemainingRoundTripEnergyEfficiency" : {
         "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.batterypass.product_condition:1.0.0#RemainingRoundTripEnergyEfficiency",

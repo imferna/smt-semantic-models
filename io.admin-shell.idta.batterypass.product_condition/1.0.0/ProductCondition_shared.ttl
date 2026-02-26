@@ -238,7 +238,7 @@
    samm:properties ( 
    [ samm:property :timeExtremeHighTemp; samm:optional true; samm:payloadName "TimeExtremeHighTemp" ]
    [ samm:property :timeExtremeLowTemp; samm:optional true; samm:payloadName "TimeExtremeLowTemp" ]
-   [ samm:property :timeExtremeHighTempCharging; samm:optional true;samm:payloadName "TimeExtremeHighTempCharging " ]
+   [ samm:property :timeExtremeHighTempCharging; samm:optional true;samm:payloadName "TimeExtremeHighTempCharging" ]
    [ samm:property :timeExtremeLowTempCharging; samm:optional true; samm:payloadName "TimeExtremeLowTempCharging" ]
    [ samm:property :lastUpdate; samm:payloadName "LastUpdate" ]
    ) .
@@ -327,7 +327,7 @@
    samm:description "Power capability at."@en ;
    samm:properties ( 
    [samm:property :atSoC; samm:payloadName "AtSoC" ]
-   [samm:property :powerCapabilityAt ; samm:payloadName "PowerCapabilityAt " ]
+   [samm:property :powerCapabilityAt ; samm:payloadName "PowerCapabilityAt" ]
    ) .
 
 :atSoC a samm:Property ;
@@ -458,7 +458,7 @@
    samm:preferredName "remaining round trip energy efficiency"@en ;
    samm:description "Remaining round trip energy efficiency."@en ;
    samm:properties ( 
-   [ samm:property :remainingRoundTripEnergyEfficiencyValue ; samm:payloadName "RemainingRoundTripEnergyEfficiencyValue " ] 
+   [ samm:property :remainingRoundTripEnergyEfficiencyValue ; samm:payloadName "RemainingRoundTripEnergyEfficiencyValue" ] 
    [ samm:property :lastUpdate; samm:payloadName "LastUpdate" ] 
    ) .
    

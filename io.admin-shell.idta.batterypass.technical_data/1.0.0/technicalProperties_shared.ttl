@@ -145,7 +145,7 @@
 
 :Lifetime a samm:Entity ;
   samm:properties ( 
-      [ samm:property :expectedLifetime; samm:payloadName "ExpectedLifetimeInCalendarYears " ] 
+      [ samm:property :expectedLifetime; samm:payloadName "ExpectedLifetimeInCalendarYears" ] 
 	  [ samm:property :expectedNumberOfCycles; samm:payloadName "ExpectedNumberOfCycles" ] 
       [ samm:property :capacityThresholdForExhaustion; samm:payloadName "CapacityThresholdExhaustion" ] 
 	  [ samm:property :cycleLifeReferenceTest; samm:payloadName "CycleLifeReferenceTest" ] 

@@ -1,6 +1,6 @@
 {
   "valueOnly4MultiLanguageProperty" : [ {
-    "de" : "9coA8d65"
+    "en" : "pT5mWu3M"
   } ],
   "valueOnly4File" : {
     "value" : "https://example.com/SafetyInstructions.pdf",
@@ -46,7 +46,7 @@
   "valueOnly4RelationshipElementWithAnnotations" : {
     "annotations" : {
       "valueOnly4MultiLanguageProperty" : [ {
-        "en" : "iJhfA2MW"
+        "de" : "oeNSnJ0f"
       } ]
     },
     "first" : {
@@ -73,22 +73,22 @@
         } ],
         "type" : "ExternalReference"
       },
-      "value" : "GJwq",
+      "value" : "6Rw",
       "name" : "SerialNumber"
     } ],
-    "globalAssetId" : "9qOXfUhK",
+    "globalAssetId" : "af0thyNPa",
     "entityType" : "SelfManagedEntity"
   },
   "valueOnly4EntityWithStatements" : {
     "statements" : {
       "valueOnly4MultiLanguageProperty" : [ {
-        "en" : "Ff7GS"
+        "en" : "8MgC5z5Q7"
       } ]
     }
   },
   "valueOnly4Range" : {
-    "min" : -76296.0,
-    "max" : -78197.4
+    "min" : -41316.4,
+    "max" : -36825.2
   },
   "valueOnly4BasicEventElement" : {
     "observed" : {

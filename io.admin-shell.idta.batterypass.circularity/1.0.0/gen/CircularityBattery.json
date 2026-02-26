@@ -1,5 +1,5 @@
 {
-  "DismantlingAndRemovalInformation" : [ "sYHxk" ],
+  "DismantlingAndRemovalInformation" : [ "d0Dds" ],
   "SparePartSources" : [ {
     "NameOfSupplier" : {
       "en" : "ABC Company"
@@ -28,22 +28,22 @@
     "SupplierWebAddress" : "https://example.com/information/product/1224/contact",
     "Components" : [ {
       "PartName" : "Cell",
-      "PartNumber" : "6W"
+      "PartNumber" : "PnYAVw"
     } ]
   } ],
   "RecycledContentInformation" : [ {
-    "PreConsumerShare" : 7.22,
+    "PreConsumerShare" : 77.21,
     "RecycledMaterial" : "Cobalt",
-    "PostConsumerShare" : 61.25
+    "PostConsumerShare" : 67.28
   } ],
   "SafetyMeasures" : {
-    "SafetyInstructions" : [ "XvhMMwD" ],
-    "ExtinguishingAgents" : [ "Tyeu" ]
+    "SafetyInstructions" : [ "2WoCFW" ],
+    "ExtinguishingAgents" : [ "0ds2fkjV" ]
   },
   "EndOfLifeInformation" : {
-    "WastePrevention" : [ "VWRzLpW" ],
-    "SeparateCollection" : [ "0B2cz" ],
-    "InformationOnCollection" : [ "pfoxqR" ]
+    "WastePrevention" : [ "ojb" ],
+    "SeparateCollection" : [ "Z9" ],
+    "InformationOnCollection" : [ "caavIHWpl" ]
   },
-  "RenewableContent" : -59603.8
+  "RenewableContent" : -12143.4
 }

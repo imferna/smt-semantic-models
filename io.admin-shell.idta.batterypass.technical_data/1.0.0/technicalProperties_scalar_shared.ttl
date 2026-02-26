@@ -60,7 +60,7 @@
   samm:preferredName "maximum permitted battery power"@en ;
   samm:description "Maximum permitted power the battery is rated for, includes the data relevant for power limits."@en ;
   samm:characteristic :PowerCapabilityAtSoc ;
-  samm:exampleValue "1.7976931348623157e+308"^^xsd:float .
+  samm:exampleValue "1.797693e+38"^^xsd:float .
 
 :initialRoundTripEnergyEfficiency a samm:Property ;
    samm:see <urn:irdi:0173-1#02-ABL833#001> ;

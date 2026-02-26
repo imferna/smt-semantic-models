@@ -1,13 +1,13 @@
 {
   "GeneralInformation" : {
-    "ManufacturerName" : "cS204",
-    "CompanyLogo" : "https://example.com/YS8bv",
+    "ManufacturerName" : "arBGENr",
+    "CompanyLogo" : "https://example.com/2VkEi",
     "ManufacturerProductDesignation" : [ {
-      "en" : "KHdLhiXZY"
+      "de" : "iB"
     } ],
-    "ManufacturerArticleNumber" : "tyHh9in",
-    "ManufacturerOrderCode" : "qsd7lsmsUf",
-    "ManufacturerIdentifier" : "d0CSVLC3w1",
+    "ManufacturerArticleNumber" : "PMq",
+    "ManufacturerOrderCode" : "61",
+    "ManufacturerIdentifier" : "G2aqpMuE7",
     "WarrantyPeriod" : "2031-10",
     "BatteryCategory" : "ev",
     "BatteryMass" : 1007.0,
@@ -17,7 +17,7 @@
         "contentType" : "application/pdf"
       },
       "ImageNote" : [ {
-        "en" : "1bX"
+        "en" : "KU70"
       } ]
     } ]
   },
@@ -45,7 +45,7 @@
       "InternalResistanceIncreaseAtBatteryModuleLevel" : 10
     },
     "PowerCapability" : {
-      "MaximumPermittedBatteryPower" : "Infinity",
+      "MaximumPermittedBatteryPower" : 1.797693E38,
       "PowerFade" : 23.0,
       "RatioNominalBatteryPowerAndBatteryEnergy" : 0.611,
       "OriginalPowerCapability" : [ {
@@ -58,11 +58,11 @@
       "TemperatureRangeIdleState_UpperBoundary" : -19.0
     },
     "Lifetime" : {
-      "ExpectedLifetimeInCalendarYears " : 15,
+      "ExpectedLifetimeInCalendarYears" : 15,
       "ExpectedNumberOfCycles" : 1000,
       "CapacityThresholdExhaustion" : 23.0,
-      "CycleLifeReferenceTest" : [ "96hQh" ],
-      "CrateOfRelevantCycleLifeTest" : -96471.8
+      "CycleLifeReferenceTest" : [ "pUiDyF9" ],
+      "CrateOfRelevantCycleLifeTest" : -10758.2
     }
   }
 }

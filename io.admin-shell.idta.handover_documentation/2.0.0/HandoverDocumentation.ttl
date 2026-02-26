@@ -61,7 +61,6 @@
    samm-c:constraint shared:CardinalityOneToMany .
 
 :DocumentSet a samm-c:Set ;
-   samm:see <https://admin-shell.io/vdi/2770/1/0/EntityForDocumentation> ;
    samm:dataType :Document .
 
 :EntitySet a samm-c:Set ;
@@ -75,13 +74,14 @@
 	 [ samm:property :documentVersions; samm:payloadName "DocumentVersions" ] 
 	 [ samm:property :documentedEntities; samm:optional true; samm:payloadName "DocumentedEntities" ] 
 	 ) ;
+   samm:preferredName "document"@en ;
    samm:description "A single handover document."@en ;
    samm:see <0173-1%2302-ABI500%23003/0173-1%2301-AHF579%23003> ;
    samm:see <https://api.eclass-cdp.com/0173-1-02-ABI500-003/0173-1-01-AHF579-003> .
    
 :documentIds a samm:Property ;
-   samm:preferredName "document IDs"@en ;
-   samm:preferredName "Dokumentennummern"@de ;
+   samm:preferredName "document identifiers"@en ;
+   samm:preferredName "Dokumentidentifikatoren"@de ;
    samm:description "Set of document identifiers for the Document. One ID in this collection should be used as a preferred ID (see isPrimary)."@en ;
    samm:description "Menge von Dokumentennummern."@de ;
    samm:see <0173-1%2302-ABI501%23003> ;

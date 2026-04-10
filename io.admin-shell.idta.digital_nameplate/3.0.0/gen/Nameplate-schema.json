@@ -66,9 +66,7 @@
       "PhoneCharacteristic" : {
         "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.contact_information:1.0.0#PhoneCharacteristic",
         "type" : "object",
-        "allOf" : [ {
-          "$ref" : "#/components/schemas/PhoneEntity"
-        } ]
+        "$ref" : "#/components/schemas/PhoneEntity"
       },
       "FaxEntity" : {
         "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.contact_information:1.0.0#FaxEntity",
@@ -90,9 +88,7 @@
       "FaxCharacteristic" : {
         "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.contact_information:1.0.0#FaxCharacteristic",
         "type" : "object",
-        "allOf" : [ {
-          "$ref" : "#/components/schemas/FaxEntity"
-        } ]
+        "$ref" : "#/components/schemas/FaxEntity"
       },
       "EmailEntity" : {
         "description" : "E-mail address and encryption method.",
@@ -125,9 +121,7 @@
       "EmailCharacteristic" : {
         "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.contact_information:1.0.0#EmailCharacteristic",
         "type" : "object",
-        "allOf" : [ {
-          "$ref" : "#/components/schemas/EmailEntity"
-        } ]
+        "$ref" : "#/components/schemas/EmailEntity"
       },
       "IpCommunicationChannelEntity" : {
         "description" : "IP-based communication channels, e.g. chat or video call.",
@@ -283,9 +277,7 @@
       "AddressInformationCharacteristic" : {
         "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.digital_nameplate:3.0.0#AddressInformationCharacteristic",
         "type" : "object",
-        "allOf" : [ {
-          "$ref" : "#/components/schemas/AdressInformation"
-        } ]
+        "$ref" : "#/components/schemas/AdressInformation"
       },
       "Date" : {
         "type" : "string",

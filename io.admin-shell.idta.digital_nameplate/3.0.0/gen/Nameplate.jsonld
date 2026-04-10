@@ -35,6 +35,330 @@
       "@container": "@list",
       "@type": "schema:object"
     },
+    "AddressInformation": {
+      "@id": "nameplate:AddressInformation",
+      "@context": {
+        "@version": 1.1,
+        "id": "@id",
+        "type": "@type",
+        "RoleOfContactPerson": {
+          "@id": "nameplate:RoleOfContactPerson",
+          "@type": "schema:string",
+          "@context": {
+            "@definition": "Function of a contact person in a process\nenumeration: 0173-1#07-AAS927#001 (administrativ contact), 0173-1#07-AAS928#001 (commercial contact), 0173-1#07-AAS929#001 (other contact), 0173-1#07-AAS930#001 (hazardous goods contact), 0173-1#07-AAS931#001 (technical contact)\nNote: the above mentioned ECLASS enumeration should be declared as 'open' for further addition.",
+            "@samm-urn": "urn:samm:io.admin-shell.idta.contact_information:1.0.0#roleOfContactPerson"
+          }
+        },
+        "NationalCode": {
+          "@id": "nameplate:NationalCode",
+          "@context": {
+            "@definition": "Code of a country (Country codes defined accord. to DIN EN ISO 3166-1).",
+            "@samm-urn": "urn:samm:io.admin-shell.idta.contact_information:1.0.0#nationalCode"
+          },
+          "@container": "@list",
+          "@type": "schema:object"
+        },
+        "Languages": {
+          "@id": "nameplate:Languages",
+          "@context": {
+            "@samm-urn": "urn:samm:io.admin-shell.idta.shared:3.1.0#languages"
+          },
+          "@container": "@list",
+          "@type": "schema:string"
+        },
+        "TimeZone": {
+          "@id": "nameplate:TimeZone",
+          "@context": {
+            "@definition": "Offsets from Coordinated Universal Time (UTC)\nNote: notation accord. to ISO 8601\nNote: for time in UTC the zone designator 'Z' is to be used.",
+            "@samm-urn": "urn:samm:io.admin-shell.idta.contact_information:1.0.0#timeZone"
+          },
+          "@type": "schema:string"
+        },
+        "CityTown": {
+          "@id": "nameplate:CityTown",
+          "@context": {
+            "@definition": "Town or city.",
+            "@samm-urn": "urn:samm:io.admin-shell.idta.contact_information:1.0.0#cityTown"
+          },
+          "@container": "@list",
+          "@type": "schema:object"
+        },
+        "Company": {
+          "@id": "nameplate:Company",
+          "@context": {
+            "@definition": "Name of the company.",
+            "@samm-urn": "urn:samm:io.admin-shell.idta.contact_information:1.0.0#company"
+          },
+          "@container": "@list",
+          "@type": "schema:object"
+        },
+        "Department": {
+          "@id": "nameplate:Department",
+          "@context": {
+            "@definition": "Administrative section within an organisation where a business partner is located.",
+            "@samm-urn": "urn:samm:io.admin-shell.idta.contact_information:1.0.0#department"
+          },
+          "@container": "@list",
+          "@type": "schema:object"
+        },
+        "Phone": {
+          "@id": "nameplate:Phone",
+          "@context": {
+            "@version": 1.1,
+            "id": "@id",
+            "type": "@type",
+            "TelephoneNumber": {
+              "@id": "nameplate:TelephoneNumber",
+              "@context": {
+                "@definition": "Complete telephone number to be called to reach a business partner.",
+                "@samm-urn": "urn:samm:io.admin-shell.idta.contact_information:1.0.0#telephoneNumber"
+              },
+              "@container": "@list",
+              "@type": "schema:object"
+            },
+            "TypeOfTelephone": {
+              "@id": "nameplate:TypeOfTelephone",
+              "@context": {
+                "@definition": "Characterization of a telephone according to its location or usage.\nenumeration: 0173-1#07-AAS754#001 (office), 0173-1#07-AAS755#001 (office mobile), 0173-1#07-AAS756#001 (secretary), 0173-1#07-AAS757#001 (substitute), 0173-1#07-AAS758#001 (home), 0173-1#07-AAS759#001 (private mobile).",
+                "@samm-urn": "urn:samm:io.admin-shell.idta.contact_information:1.0.0#typeOfTelephone"
+              },
+              "@type": "schema:string"
+            },
+            "AvailableTime": {
+              "@id": "nameplate:AvailableTime",
+              "@context": {
+                "@definition": "Specification of the available time window.",
+                "@samm-urn": "urn:samm:io.admin-shell.idta.contact_information:1.0.0#availableTime"
+              },
+              "@container": "@list",
+              "@type": "schema:object"
+            },
+            "@samm-urn": "urn:samm:io.admin-shell.idta.contact_information:1.0.0#phone",
+            "@definition": "Phone number including type."
+          }
+        },
+        "Fax": {
+          "@id": "nameplate:Fax",
+          "@context": {
+            "@version": 1.1,
+            "id": "@id",
+            "type": "@type",
+            "FaxNumber": {
+              "@id": "nameplate:FaxNumber",
+              "@context": {
+                "@definition": "Complete telephone number to be called to reach a business partner's fax machine.",
+                "@samm-urn": "urn:samm:io.admin-shell.idta.contact_information:1.0.0#faxNumber"
+              },
+              "@container": "@list",
+              "@type": "schema:object"
+            },
+            "TypeOfFaxNumber": {
+              "@id": "nameplate:TypeOfFaxNumber",
+              "@context": {
+                "@definition": "Characterization of the fax according its location or usage\nenumeration: 0173-1#07-AAS754#001 (office), 0173-1#07-AAS756#001 (secretary), 0173-1#07-AAS758#001 (home).",
+                "@samm-urn": "urn:samm:io.admin-shell.idta.contact_information:1.0.0#typeOfFaxNumber"
+              },
+              "@type": "schema:string"
+            },
+            "@samm-urn": "urn:samm:io.admin-shell.idta.contact_information:1.0.0#fax"
+          }
+        },
+        "Email": {
+          "@id": "nameplate:Email",
+          "@context": {
+            "@version": 1.1,
+            "id": "@id",
+            "type": "@type",
+            "EmailAddress": {
+              "@id": "nameplate:EmailAddress",
+              "@context": {
+                "@definition": "Electronic mail address of a business partner.",
+                "@samm-urn": "urn:samm:io.admin-shell.idta.contact_information:1.0.0#emailAddress"
+              },
+              "@type": "schema:string"
+            },
+            "PublicKey": {
+              "@id": "nameplate:PublicKey",
+              "@context": {
+                "@definition": "Public part of an unsymmetrical key pair to sign or encrypt text or messages.",
+                "@samm-urn": "urn:samm:io.admin-shell.idta.contact_information:1.0.0#publicKey"
+              },
+              "@container": "@list",
+              "@type": "schema:object"
+            },
+            "TypeOfEmailAddress": {
+              "@id": "nameplate:TypeOfEmailAddress",
+              "@context": {
+                "@definition": "Characterization of an e-mail address according to its location or usage\nenumeration: 0173-1#07-AAS754#001 (office), 0173-1#07-AAS756#001 (secretary), 0173-1#07-AAS757#001 (substitute), 0173-1#07-AAS758#001 (home).",
+                "@samm-urn": "urn:samm:io.admin-shell.idta.contact_information:1.0.0#typeOfEmailAddress"
+              },
+              "@type": "schema:string"
+            },
+            "TypeOfPublicKey": {
+              "@id": "nameplate:TypeOfPublicKey",
+              "@context": {
+                "@definition": "Characterization of a public key according to its encryption process.",
+                "@samm-urn": "urn:samm:io.admin-shell.idta.contact_information:1.0.0#typeOfPublicKey"
+              },
+              "@container": "@list",
+              "@type": "schema:object"
+            },
+            "@samm-urn": "urn:samm:io.admin-shell.idta.contact_information:1.0.0#email",
+            "@definition": "E-mail address and encryption method."
+          }
+        },
+        "IPCommunicationChannels": {
+          "@id": "nameplate:IPCommunicationChannels",
+          "@context": {
+            "@version": 1.1,
+            "id": "@id",
+            "type": "@type",
+            "@context": {
+              "@version": 1.1,
+              "id": "@id",
+              "type": "@type",
+              "AddressOfAdditionalLink": {
+                "@id": "nameplate:AddressOfAdditionalLink",
+                "@context": {
+                  "@definition": "Web site address where information about the product or contact is given.",
+                  "@samm-urn": "urn:samm:io.admin-shell.idta.contact_information:1.0.0#addressOfAdditionalLinkOfIpCommunicationChannel"
+                },
+                "@type": "schema:string"
+              },
+              "TypeOfCommunication": {
+                "@id": "nameplate:TypeOfCommunication",
+                "@context": {
+                  "@definition": "Characterization of an IP-based communication channel.",
+                  "@samm-urn": "urn:samm:io.admin-shell.idta.contact_information:1.0.0#typeOfCommunication"
+                },
+                "@type": "schema:string"
+              },
+              "availableTime": {
+                "@id": "nameplate:availableTime",
+                "@context": {
+                  "@definition": "Specification of the available time windows.",
+                  "@samm-urn": "urn:samm:io.admin-shell.idta.contact_information:1.0.0#availableTimeIpCommunicationChannel"
+                },
+                "@container": "@list",
+                "@type": "schema:object"
+              }
+            },
+            "@definition": "IP-based communication channels, e.g. chat or video call.",
+            "@samm-urn": "urn:samm:io.admin-shell.idta.contact_information:1.0.0#ipCommunicationChannels"
+          },
+          "@container": "@list"
+        },
+        "Street": {
+          "@id": "nameplate:Street",
+          "@context": {
+            "@definition": "Street name and house number.",
+            "@samm-urn": "urn:samm:io.admin-shell.idta.contact_information:1.0.0#street"
+          },
+          "@container": "@list",
+          "@type": "schema:object"
+        },
+        "ZipCode": {
+          "@id": "nameplate:ZipCode",
+          "@context": {
+            "@definition": "ZIP code of address.",
+            "@samm-urn": "urn:samm:io.admin-shell.idta.contact_information:1.0.0#zipCode"
+          },
+          "@container": "@list",
+          "@type": "schema:object"
+        },
+        "POBox": {
+          "@id": "nameplate:POBox",
+          "@context": {
+            "@definition": "P.O. box number.",
+            "@samm-urn": "urn:samm:io.admin-shell.idta.contact_information:1.0.0#poBox"
+          },
+          "@container": "@list",
+          "@type": "schema:object"
+        },
+        "ZipCodeOfPOBox": {
+          "@id": "nameplate:ZipCodeOfPOBox",
+          "@context": {
+            "@definition": "ZIP code of address.",
+            "@samm-urn": "urn:samm:io.admin-shell.idta.contact_information:1.0.0#zipCodeOfPoBox"
+          },
+          "@container": "@list",
+          "@type": "schema:object"
+        },
+        "StateCounty": {
+          "@id": "nameplate:StateCounty",
+          "@context": {
+            "@definition": "Federal state, a part of a state.",
+            "@samm-urn": "urn:samm:io.admin-shell.idta.contact_information:1.0.0#stateCounty"
+          },
+          "@container": "@list",
+          "@type": "schema:object"
+        },
+        "NameOfContact": {
+          "@id": "nameplate:NameOfContact",
+          "@context": {
+            "@definition": "A set of language-text items.",
+            "@samm-urn": "urn:samm:io.admin-shell.idta.contact_information:1.0.0#nameOfContact"
+          },
+          "@container": "@list",
+          "@type": "schema:object"
+        },
+        "FirstName": {
+          "@id": "nameplate:FirstName",
+          "@context": {
+            "@definition": "First name of a contact person.",
+            "@samm-urn": "urn:samm:io.admin-shell.idta.contact_information:1.0.0#firstName"
+          },
+          "@container": "@list",
+          "@type": "schema:object"
+        },
+        "MiddleNames": {
+          "@id": "nameplate:MiddleNames",
+          "@context": {
+            "@definition": "Middle names of contact person.",
+            "@samm-urn": "urn:samm:io.admin-shell.idta.contact_information:1.0.0#middleNames"
+          },
+          "@container": "@list",
+          "@type": "schema:object"
+        },
+        "Title": {
+          "@id": "nameplate:Title",
+          "@context": {
+            "@definition": "Common, formal, religious, or other title preceding a contact person's name.",
+            "@samm-urn": "urn:samm:io.admin-shell.idta.contact_information:1.0.0#title"
+          },
+          "@container": "@list",
+          "@type": "schema:object"
+        },
+        "AcademicTitle": {
+          "@id": "nameplate:AcademicTitle",
+          "@context": {
+            "@definition": "Academic title preceding a contact person's name.",
+            "@samm-urn": "urn:samm:io.admin-shell.idta.contact_information:1.0.0#academicTitle"
+          },
+          "@container": "@list",
+          "@type": "schema:object"
+        },
+        "FurtherDetailsOfContact": {
+          "@id": "nameplate:FurtherDetailsOfContact",
+          "@context": {
+            "@definition": "Additional information of the contact person.",
+            "@samm-urn": "urn:samm:io.admin-shell.idta.contact_information:1.0.0#furtherDetailsOfContact"
+          },
+          "@container": "@list",
+          "@type": "schema:object"
+        },
+        "AddressOfAdditionalLink": {
+          "@id": "nameplate:AddressOfAdditionalLink",
+          "@context": {
+            "@definition": "Web site address where information about the product or contact is given.",
+            "@samm-urn": "urn:samm:io.admin-shell.idta.contact_information:1.0.0#addressOfAdditionalLink"
+          },
+          "@type": "schema:string"
+        },
+        "@samm-urn": "urn:samm:io.admin-shell.idta.digital_nameplate:3.0.0#addressInformation",
+        "@definition": "Address information of the manufacturer."
+      }
+    },
     "ManufacturerProductRoot": {
       "@id": "nameplate:ManufacturerProductRoot",
       "@context": {

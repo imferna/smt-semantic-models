@@ -1,0 +1,237 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "schema": "https://schema.org/",
+    "nameplate": "urn:samm:io.admin-shell.idta.digital_nameplate:3.0.0#",
+    "Nameplate": {
+      "@id": "nameplate:Nameplate",
+      "@type": "@id"
+    },
+    "id": "@id",
+    "type": "@type",
+    "URIOfTheProduct": {
+      "@id": "nameplate:URIOfTheProduct",
+      "@context": {
+        "@samm-urn": "urn:samm:io.admin-shell.idta.digital_nameplate:3.0.0#uriOfTheProduct",
+        "@definition": "Unique global identification of the product using an universal resource identifier (URI)."
+      },
+      "@type": "schema:string"
+    },
+    "ManufacturerName": {
+      "@id": "nameplate:ManufacturerName",
+      "@context": {
+        "@definition": "Legally valid designation of the natural or judicial person which is directly responsible for the design, production, packaging and labeling of a product in respect to its being brought into circulation.",
+        "@samm-urn": "urn:samm:io.admin-shell.idta.digital_nameplate:3.0.0#manufacturerName"
+      },
+      "@container": "@list",
+      "@type": "schema:object"
+    },
+    "ManufacturerProductDesignation": {
+      "@id": "nameplate:ManufacturerProductDesignation",
+      "@context": {
+        "@definition": "Short description of the product (short text), third or lowest level of a 3 level manufacturer specific product hierarchy.",
+        "@samm-urn": "urn:samm:io.admin-shell.idta.digital_nameplate:3.0.0#manufacturerProductDesignation"
+      },
+      "@container": "@list",
+      "@type": "schema:object"
+    },
+    "ManufacturerProductRoot": {
+      "@id": "nameplate:ManufacturerProductRoot",
+      "@context": {
+        "@definition": "Top level of a 3 level manufacturer specific product hierarchy.",
+        "@samm-urn": "urn:samm:io.admin-shell.idta.digital_nameplate:3.0.0#manufacturerProductRoot"
+      },
+      "@container": "@list",
+      "@type": "schema:object"
+    },
+    "ManufacturerProductFamily": {
+      "@id": "nameplate:ManufacturerProductFamily",
+      "@context": {
+        "@definition": "2nd level of a 3 level manufacturer specific product hierarchy.",
+        "@samm-urn": "urn:samm:io.admin-shell.idta.digital_nameplate:3.0.0#manufacturerProductFamily"
+      },
+      "@container": "@list",
+      "@type": "schema:object"
+    },
+    "ManufacturerProductType": {
+      "@id": "nameplate:ManufacturerProductType",
+      "@context": {
+        "@definition": "Characteristic to differentiate between different products of a product family or special variants.",
+        "@samm-urn": "urn:samm:io.admin-shell.idta.digital_nameplate:3.0.0#manufacturerProductType"
+      },
+      "@type": "schema:string"
+    },
+    "OrderCodeOfManufacturer": {
+      "@id": "nameplate:OrderCodeOfManufacturer",
+      "@context": {
+        "@definition": "Unique combination of numbers and letters used to identify the device for ordering.",
+        "@samm-urn": "urn:samm:io.admin-shell.idta.digital_nameplate:3.0.0#orderCodeOfManufacturer"
+      },
+      "@type": "schema:string"
+    },
+    "ProductArticleNumberOfManufacturer": {
+      "@id": "nameplate:ProductArticleNumberOfManufacturer",
+      "@context": {
+        "@definition": "Unique product identifier of the manufacturer.",
+        "@samm-urn": "urn:samm:io.admin-shell.idta.digital_nameplate:3.0.0#productArticleNumberOfManufacturer"
+      },
+      "@type": "schema:string"
+    },
+    "SerialNumber": {
+      "@id": "nameplate:SerialNumber",
+      "@context": {
+        "@definition": "Unique combination of numbers and letters used to identify the device once it has been manufactured.",
+        "@samm-urn": "urn:samm:io.admin-shell.idta.digital_nameplate:3.0.0#serialNumber"
+      },
+      "@type": "schema:string"
+    },
+    "YearOfConstruction": {
+      "@id": "nameplate:YearOfConstruction",
+      "@context": {
+        "@definition": "Year in which the manufacturing process is completed.",
+        "@samm-urn": "urn:samm:io.admin-shell.idta.digital_nameplate:3.0.0#yearOfConstruction"
+      },
+      "@type": "schema:string"
+    },
+    "DateOfManufacture": {
+      "@id": "nameplate:DateOfManufacture",
+      "@context": {
+        "@samm-urn": "urn:samm:io.admin-shell.idta.digital_nameplate:3.0.0#dateOfManufacture",
+        "@definition": "Date when an item was manufactured."
+      },
+      "@type": "schema:string"
+    },
+    "HardwareVersion": {
+      "@id": "nameplate:HardwareVersion",
+      "@context": {
+        "@definition": "Version of the hardware supplied with the device.",
+        "@samm-urn": "urn:samm:io.admin-shell.idta.digital_nameplate:3.0.0#hardwareVersion"
+      },
+      "@type": "schema:string"
+    },
+    "FirmwareVersion": {
+      "@id": "nameplate:FirmwareVersion",
+      "@context": {
+        "@definition": "Version of the firmware supplied with the device.",
+        "@samm-urn": "urn:samm:io.admin-shell.idta.digital_nameplate:3.0.0#firmwareVersion"
+      },
+      "@type": "schema:string"
+    },
+    "SoftwareVersion": {
+      "@id": "nameplate:SoftwareVersion",
+      "@context": {
+        "@definition": "Version of the software used by the device.",
+        "@samm-urn": "urn:samm:io.admin-shell.idta.digital_nameplate:3.0.0#softwareVersion"
+      },
+      "@type": "schema:string"
+    },
+    "CountryOfOrigin": {
+      "@id": "nameplate:CountryOfOrigin",
+      "@context": {
+        "@definition": "Country where the product was manufactured. Note: Country codes defined accord. to DIN EN ISO 3166-1 alpha-2 codes.",
+        "@samm-urn": "urn:samm:io.admin-shell.idta.digital_nameplate:3.0.0#countryOfOrigin"
+      },
+      "@type": "schema:string"
+    },
+    "UniqueFacilityIdentifier": {
+      "@id": "nameplate:UniqueFacilityIdentifier",
+      "@context": {
+        "@definition": "Unique string of characters for the identification of locations or buildings involved in a product\u2019s value chain or used by actors involved in a product\u2019s value chain.",
+        "@samm-urn": "urn:samm:io.admin-shell.idta.digital_nameplate:3.0.0#uniqueFacilityIdentifier"
+      },
+      "@type": "schema:string"
+    },
+    "CompanyLogo": {
+      "@id": "nameplate:CompanyLogo",
+      "@context": {
+        "@definition": "A graphic mark used to represent a company, an organisation or a product.",
+        "@samm-urn": "urn:samm:io.admin-shell.idta.digital_nameplate:3.0.0#logoCompany"
+      },
+      "@type": "schema:string"
+    },
+    "Markings": {
+      "@id": "nameplate:Markings",
+      "@context": {
+        "@version": 1.1,
+        "id": "@id",
+        "type": "@type",
+        "@context": {
+          "@version": 1.1,
+          "id": "@id",
+          "type": "@type",
+          "MarkingName": {
+            "@id": "nameplate:MarkingName",
+            "@context": {
+              "@definition": "Common name of the marking.",
+              "@samm-urn": "urn:samm:io.admin-shell.idta.shared:3.1.0#markingName"
+            },
+            "@type": "schema:string"
+          },
+          "DesignationOfCertificateOrApproval": {
+            "@id": "nameplate:DesignationOfCertificateOrApproval",
+            "@context": {
+              "@definition": "Alphanumeric character sequence identifying a certificate or approval.",
+              "@samm-urn": "urn:samm:io.admin-shell.idta.shared:3.1.0#designationOfCertificateOrApproval"
+            },
+            "@type": "schema:string"
+          },
+          "IssueDate": {
+            "@id": "nameplate:IssueDate",
+            "@context": {
+              "@definition": "Date, at which the specified certificate is issued. Note: format by lexical representation: CCYY-MM-DD. Note: to be specified to the day.",
+              "@samm-urn": "urn:samm:io.admin-shell.idta.shared:3.1.0#issueDate"
+            },
+            "@type": "schema:string"
+          },
+          "ExpiryDate": {
+            "@id": "nameplate:ExpiryDate",
+            "@context": {
+              "@definition": "Date, at which the specified certificate expires. Note: format by lexical representation: CCYY-MM-DD. Note: to be specified to the day.",
+              "@samm-urn": "urn:samm:io.admin-shell.idta.shared:3.1.0#expiryDate"
+            },
+            "@type": "schema:string"
+          },
+          "MarkingFile": {
+            "@id": "nameplate:MarkingFile",
+            "@context": {
+              "@version": 1.1,
+              "id": "@id",
+              "type": "@type",
+              "value": {
+                "@id": "nameplate:value",
+                "@context": {
+                  "@definition": "Path and name of the file (with file extension).\n\nThe path can be absolute or relative.",
+                  "@samm-urn": "urn:samm:io.admin-shell.idta.shared:3.1.0#resourceValue"
+                },
+                "@type": "schema:string"
+              },
+              "contentType": {
+                "@id": "nameplate:contentType",
+                "@context": {
+                  "@definition": "Content type of the content of the file or blob.",
+                  "@samm-urn": "urn:samm:io.admin-shell.idta.shared:3.1.0#contentType"
+                },
+                "@type": "schema:string"
+              },
+              "@definition": "Conformity symbol of the marking.",
+              "@samm-urn": "urn:samm:io.admin-shell.idta.shared:3.1.0#markingFile"
+            }
+          },
+          "MarkingAdditionalText": {
+            "@id": "nameplate:MarkingAdditionalText",
+            "@context": {
+              "@definition": "Where applicable, additional information on the marking in plain text, e.g. the ID-number of the notified body involved in the conformity process.",
+              "@samm-urn": "urn:samm:io.admin-shell.idta.shared:3.1.0#markingAdditionalText"
+            },
+            "@type": "schema:string"
+          }
+        },
+        "@definition": "Markings of the product. Note: CE marking is declared as mandatory according to EU Blue Guide.",
+        "@samm-urn": "urn:samm:io.admin-shell.idta.digital_nameplate:3.0.0#markings"
+      },
+      "@container": "@list"
+    },
+    "@definition": "Contains the nameplate information attached to the product.",
+    "@samm-urn": "urn:samm:io.admin-shell.idta.digital_nameplate:3.0.0#Nameplate"
+  }
+}

@@ -48,23 +48,17 @@
           "TelephoneNumber" : {
             "description" : "Complete telephone number to be called to reach a business partner.",
             "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.contact_information:1.0.0#telephoneNumber",
-            "allOf" : [ {
-              "$ref" : "#/components/schemas/MultiLanguageTexts"
-            } ]
+            "$ref" : "#/components/schemas/MultiLanguageTexts"
           },
           "TypeOfTelephone" : {
             "description" : "Characterization of a telephone according to its location or usage.\nenumeration: 0173-1#07-AAS754#001 (office), 0173-1#07-AAS755#001 (office mobile), 0173-1#07-AAS756#001 (secretary), 0173-1#07-AAS757#001 (substitute), 0173-1#07-AAS758#001 (home), 0173-1#07-AAS759#001 (private mobile).",
             "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.contact_information:1.0.0#typeOfTelephone",
-            "allOf" : [ {
-              "$ref" : "#/components/schemas/Text"
-            } ]
+            "$ref" : "#/components/schemas/Text"
           },
           "AvailableTime" : {
             "description" : "Specification of the available time window.",
             "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.contact_information:1.0.0#availableTime",
-            "allOf" : [ {
-              "$ref" : "#/components/schemas/MultiLanguageTexts"
-            } ]
+            "$ref" : "#/components/schemas/MultiLanguageTexts"
           }
         },
         "required" : [ "TelephoneNumber" ]
@@ -83,16 +77,12 @@
           "FaxNumber" : {
             "description" : "Complete telephone number to be called to reach a business partner's fax machine.",
             "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.contact_information:1.0.0#faxNumber",
-            "allOf" : [ {
-              "$ref" : "#/components/schemas/MultiLanguageTexts"
-            } ]
+            "$ref" : "#/components/schemas/MultiLanguageTexts"
           },
           "TypeOfFaxNumber" : {
             "description" : "Characterization of the fax according its location or usage\nenumeration: 0173-1#07-AAS754#001 (office), 0173-1#07-AAS756#001 (secretary), 0173-1#07-AAS758#001 (home).",
             "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.contact_information:1.0.0#typeOfFaxNumber",
-            "allOf" : [ {
-              "$ref" : "#/components/schemas/Text"
-            } ]
+            "$ref" : "#/components/schemas/Text"
           }
         },
         "required" : [ "FaxNumber" ]
@@ -112,30 +102,22 @@
           "EmailAddress" : {
             "description" : "Electronic mail address of a business partner.",
             "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.contact_information:1.0.0#emailAddress",
-            "allOf" : [ {
-              "$ref" : "#/components/schemas/Text"
-            } ]
+            "$ref" : "#/components/schemas/Text"
           },
           "PublicKey" : {
             "description" : "Public part of an unsymmetrical key pair to sign or encrypt text or messages.",
             "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.contact_information:1.0.0#publicKey",
-            "allOf" : [ {
-              "$ref" : "#/components/schemas/MultiLanguageTexts"
-            } ]
+            "$ref" : "#/components/schemas/MultiLanguageTexts"
           },
           "TypeOfEmailAddress" : {
             "description" : "Characterization of an e-mail address according to its location or usage\nenumeration: 0173-1#07-AAS754#001 (office), 0173-1#07-AAS756#001 (secretary), 0173-1#07-AAS757#001 (substitute), 0173-1#07-AAS758#001 (home).",
             "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.contact_information:1.0.0#typeOfEmailAddress",
-            "allOf" : [ {
-              "$ref" : "#/components/schemas/Text"
-            } ]
+            "$ref" : "#/components/schemas/Text"
           },
           "TypeOfPublicKey" : {
             "description" : "Characterization of a public key according to its encryption process.",
             "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.contact_information:1.0.0#typeOfPublicKey",
-            "allOf" : [ {
-              "$ref" : "#/components/schemas/MultiLanguageTexts"
-            } ]
+            "$ref" : "#/components/schemas/MultiLanguageTexts"
           }
         },
         "required" : [ "EmailAddress" ]
@@ -155,23 +137,17 @@
           "AddressOfAdditionalLink" : {
             "description" : "Web site address where information about the product or contact is given.",
             "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.contact_information:1.0.0#addressOfAdditionalLinkOfIpCommunicationChannel",
-            "allOf" : [ {
-              "$ref" : "#/components/schemas/Text"
-            } ]
+            "$ref" : "#/components/schemas/Text"
           },
           "TypeOfCommunication" : {
             "description" : "Characterization of an IP-based communication channel.",
             "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.contact_information:1.0.0#typeOfCommunication",
-            "allOf" : [ {
-              "$ref" : "#/components/schemas/Text"
-            } ]
+            "$ref" : "#/components/schemas/Text"
           },
           "availableTime" : {
             "description" : "Specification of the available time windows.",
             "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.contact_information:1.0.0#availableTimeIpCommunicationChannel",
-            "allOf" : [ {
-              "$ref" : "#/components/schemas/MultiLanguageTexts"
-            } ]
+            "$ref" : "#/components/schemas/MultiLanguageTexts"
           }
         },
         "required" : [ "AddressOfAdditionalLink" ]
@@ -192,160 +168,114 @@
           "RoleOfContactPerson" : {
             "description" : "Function of a contact person in a process\nenumeration: 0173-1#07-AAS927#001 (administrativ contact), 0173-1#07-AAS928#001 (commercial contact), 0173-1#07-AAS929#001 (other contact), 0173-1#07-AAS930#001 (hazardous goods contact), 0173-1#07-AAS931#001 (technical contact)\nNote: the above mentioned ECLASS enumeration should be declared as 'open' for further addition.",
             "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.contact_information:1.0.0#roleOfContactPerson",
-            "allOf" : [ {
-              "$ref" : "#/components/schemas/RoleOfContactPersonCharacteristic"
-            } ]
+            "$ref" : "#/components/schemas/RoleOfContactPersonCharacteristic"
           },
           "NationalCode" : {
             "description" : "Code of a country (Country codes defined accord. to DIN EN ISO 3166-1).",
             "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.contact_information:1.0.0#nationalCode",
-            "allOf" : [ {
-              "$ref" : "#/components/schemas/MultiLanguageTexts"
-            } ]
+            "$ref" : "#/components/schemas/MultiLanguageTexts"
           },
           "Languages" : {
             "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.shared:3.1.0#languages",
-            "allOf" : [ {
-              "$ref" : "#/components/schemas/LanguageSetTrait"
-            } ]
+            "$ref" : "#/components/schemas/LanguageSetTrait"
           },
           "TimeZone" : {
             "description" : "Offsets from Coordinated Universal Time (UTC)\nNote: notation accord. to ISO 8601\nNote: for time in UTC the zone designator 'Z' is to be used.",
             "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.contact_information:1.0.0#timeZone",
-            "allOf" : [ {
-              "$ref" : "#/components/schemas/Text"
-            } ]
+            "$ref" : "#/components/schemas/Text"
           },
           "CityTown" : {
             "description" : "Town or city.",
             "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.contact_information:1.0.0#cityTown",
-            "allOf" : [ {
-              "$ref" : "#/components/schemas/MultiLanguageTexts"
-            } ]
+            "$ref" : "#/components/schemas/MultiLanguageTexts"
           },
           "Company" : {
             "description" : "Name of the company.",
             "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.contact_information:1.0.0#company",
-            "allOf" : [ {
-              "$ref" : "#/components/schemas/MultiLanguageTexts"
-            } ]
+            "$ref" : "#/components/schemas/MultiLanguageTexts"
           },
           "Department" : {
             "description" : "Administrative section within an organisation where a business partner is located.",
             "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.contact_information:1.0.0#department",
-            "allOf" : [ {
-              "$ref" : "#/components/schemas/MultiLanguageTexts"
-            } ]
+            "$ref" : "#/components/schemas/MultiLanguageTexts"
           },
           "Phone" : {
             "description" : "Phone number including type.",
             "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.contact_information:1.0.0#phone",
-            "allOf" : [ {
-              "$ref" : "#/components/schemas/PhoneCharacteristic"
-            } ]
+            "$ref" : "#/components/schemas/PhoneCharacteristic"
           },
           "Fax" : {
             "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.contact_information:1.0.0#fax",
-            "allOf" : [ {
-              "$ref" : "#/components/schemas/FaxCharacteristic"
-            } ]
+            "$ref" : "#/components/schemas/FaxCharacteristic"
           },
           "Email" : {
             "description" : "E-mail address and encryption method.",
             "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.contact_information:1.0.0#email",
-            "allOf" : [ {
-              "$ref" : "#/components/schemas/EmailCharacteristic"
-            } ]
+            "$ref" : "#/components/schemas/EmailCharacteristic"
           },
           "IPCommunicationChannels" : {
             "description" : "IP-based communication channels, e.g. chat or video call.",
             "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.contact_information:1.0.0#ipCommunicationChannels",
-            "allOf" : [ {
-              "$ref" : "#/components/schemas/IpCommunicationChannelSet"
-            } ]
+            "$ref" : "#/components/schemas/IpCommunicationChannelSet"
           },
           "Street" : {
             "description" : "Street name and house number.",
             "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.contact_information:1.0.0#street",
-            "allOf" : [ {
-              "$ref" : "#/components/schemas/MultiLanguageTexts"
-            } ]
+            "$ref" : "#/components/schemas/MultiLanguageTexts"
           },
           "ZipCode" : {
             "description" : "ZIP code of address.",
             "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.contact_information:1.0.0#zipCode",
-            "allOf" : [ {
-              "$ref" : "#/components/schemas/MultiLanguageTexts"
-            } ]
+            "$ref" : "#/components/schemas/MultiLanguageTexts"
           },
           "POBox" : {
             "description" : "P.O. box number.",
             "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.contact_information:1.0.0#poBox",
-            "allOf" : [ {
-              "$ref" : "#/components/schemas/MultiLanguageTexts"
-            } ]
+            "$ref" : "#/components/schemas/MultiLanguageTexts"
           },
           "ZipCodeOfPOBox" : {
             "description" : "ZIP code of address.",
             "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.contact_information:1.0.0#zipCodeOfPoBox",
-            "allOf" : [ {
-              "$ref" : "#/components/schemas/MultiLanguageTexts"
-            } ]
+            "$ref" : "#/components/schemas/MultiLanguageTexts"
           },
           "StateCounty" : {
             "description" : "Federal state, a part of a state.",
             "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.contact_information:1.0.0#stateCounty",
-            "allOf" : [ {
-              "$ref" : "#/components/schemas/MultiLanguageTexts"
-            } ]
+            "$ref" : "#/components/schemas/MultiLanguageTexts"
           },
           "NameOfContact" : {
             "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.contact_information:1.0.0#nameOfContact",
-            "allOf" : [ {
-              "$ref" : "#/components/schemas/MultiLanguageTexts"
-            } ]
+            "$ref" : "#/components/schemas/MultiLanguageTexts"
           },
           "FirstName" : {
             "description" : "First name of a contact person.",
             "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.contact_information:1.0.0#firstName",
-            "allOf" : [ {
-              "$ref" : "#/components/schemas/MultiLanguageTexts"
-            } ]
+            "$ref" : "#/components/schemas/MultiLanguageTexts"
           },
           "MiddleNames" : {
             "description" : "Middle names of contact person.",
             "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.contact_information:1.0.0#middleNames",
-            "allOf" : [ {
-              "$ref" : "#/components/schemas/MultiLanguageTexts"
-            } ]
+            "$ref" : "#/components/schemas/MultiLanguageTexts"
           },
           "Title" : {
             "description" : "Common, formal, religious, or other title preceding a contact person's name.",
             "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.contact_information:1.0.0#title",
-            "allOf" : [ {
-              "$ref" : "#/components/schemas/MultiLanguageTexts"
-            } ]
+            "$ref" : "#/components/schemas/MultiLanguageTexts"
           },
           "AcademicTitle" : {
             "description" : "Academic title preceding a contact person's name.",
             "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.contact_information:1.0.0#academicTitle",
-            "allOf" : [ {
-              "$ref" : "#/components/schemas/MultiLanguageTexts"
-            } ]
+            "$ref" : "#/components/schemas/MultiLanguageTexts"
           },
           "FurtherDetailsOfContact" : {
             "description" : "Additional information of the contact person.",
             "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.contact_information:1.0.0#furtherDetailsOfContact",
-            "allOf" : [ {
-              "$ref" : "#/components/schemas/MultiLanguageTexts"
-            } ]
+            "$ref" : "#/components/schemas/MultiLanguageTexts"
           },
           "AddressOfAdditionalLink" : {
             "description" : "Web site address where information about the product or contact is given.",
             "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.contact_information:1.0.0#addressOfAdditionalLink",
-            "allOf" : [ {
-              "$ref" : "#/components/schemas/Text"
-            } ]
+            "$ref" : "#/components/schemas/Text"
           }
         },
         "required" : [ "NationalCode", "CityTown", "Street", "ZipCode" ]
@@ -387,16 +317,12 @@
           "value" : {
             "description" : "Path and name of the file (with file extension).\n\nThe path can be absolute or relative.",
             "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.shared:3.1.0#resourceValue",
-            "allOf" : [ {
-              "$ref" : "#/components/schemas/ResourcePath"
-            } ]
+            "$ref" : "#/components/schemas/ResourcePath"
           },
           "contentType" : {
             "description" : "Content type of the content of the file or blob.",
             "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.shared:3.1.0#contentType",
-            "allOf" : [ {
-              "$ref" : "#/components/schemas/MimeType"
-            } ]
+            "$ref" : "#/components/schemas/MimeType"
           }
         },
         "required" : [ "value", "contentType" ]
@@ -408,44 +334,32 @@
           "MarkingName" : {
             "description" : "Common name of the marking.",
             "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.shared:3.1.0#markingName",
-            "allOf" : [ {
-              "$ref" : "#/components/schemas/Text"
-            } ]
+            "$ref" : "#/components/schemas/Text"
           },
           "DesignationOfCertificateOrApproval" : {
             "description" : "Alphanumeric character sequence identifying a certificate or approval.",
             "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.shared:3.1.0#designationOfCertificateOrApproval",
-            "allOf" : [ {
-              "$ref" : "#/components/schemas/Text"
-            } ]
+            "$ref" : "#/components/schemas/Text"
           },
           "IssueDate" : {
             "description" : "Date, at which the specified certificate is issued. Note: format by lexical representation: CCYY-MM-DD. Note: to be specified to the day.",
             "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.shared:3.1.0#issueDate",
-            "allOf" : [ {
-              "$ref" : "#/components/schemas/Date0"
-            } ]
+            "$ref" : "#/components/schemas/Date0"
           },
           "ExpiryDate" : {
             "description" : "Date, at which the specified certificate expires. Note: format by lexical representation: CCYY-MM-DD. Note: to be specified to the day.",
             "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.shared:3.1.0#expiryDate",
-            "allOf" : [ {
-              "$ref" : "#/components/schemas/Date0"
-            } ]
+            "$ref" : "#/components/schemas/Date0"
           },
           "MarkingFile" : {
             "description" : "Conformity symbol of the marking.",
             "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.shared:3.1.0#markingFile",
-            "allOf" : [ {
-              "$ref" : "#/components/schemas/FileWithContentType"
-            } ]
+            "$ref" : "#/components/schemas/FileWithContentType"
           },
           "MarkingAdditionalText" : {
             "description" : "Where applicable, additional information on the marking in plain text, e.g. the ID-number of the notified body involved in the conformity process.",
             "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.shared:3.1.0#markingAdditionalText",
-            "allOf" : [ {
-              "$ref" : "#/components/schemas/Text"
-            } ]
+            "$ref" : "#/components/schemas/Text"
           }
         },
         "required" : [ "MarkingName", "MarkingFile" ]
@@ -465,135 +379,97 @@
     "URIOfTheProduct" : {
       "description" : "Unique global identification of the product using an universal resource identifier (URI).",
       "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.digital_nameplate:3.0.0#uriOfTheProduct",
-      "allOf" : [ {
-        "$ref" : "#/components/schemas/Uri"
-      } ]
+      "$ref" : "#/components/schemas/Uri"
     },
     "ManufacturerName" : {
       "description" : "Legally valid designation of the natural or judicial person which is directly responsible for the design, production, packaging and labeling of a product in respect to its being brought into circulation.",
       "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.digital_nameplate:3.0.0#manufacturerName",
-      "allOf" : [ {
-        "$ref" : "#/components/schemas/MultiLanguageTexts"
-      } ]
+      "$ref" : "#/components/schemas/MultiLanguageTexts"
     },
     "ManufacturerProductDesignation" : {
       "description" : "Short description of the product (short text), third or lowest level of a 3 level manufacturer specific product hierarchy.",
       "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.digital_nameplate:3.0.0#manufacturerProductDesignation",
-      "allOf" : [ {
-        "$ref" : "#/components/schemas/MultiLanguageTexts"
-      } ]
+      "$ref" : "#/components/schemas/MultiLanguageTexts"
     },
     "AddressInformation" : {
       "description" : "Address information of the manufacturer.",
       "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.digital_nameplate:3.0.0#addressInformation",
-      "allOf" : [ {
-        "$ref" : "#/components/schemas/AddressInformationCharacteristic"
-      } ]
+      "$ref" : "#/components/schemas/AddressInformationCharacteristic"
     },
     "ManufacturerProductRoot" : {
       "description" : "Top level of a 3 level manufacturer specific product hierarchy.",
       "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.digital_nameplate:3.0.0#manufacturerProductRoot",
-      "allOf" : [ {
-        "$ref" : "#/components/schemas/MultiLanguageTexts"
-      } ]
+      "$ref" : "#/components/schemas/MultiLanguageTexts"
     },
     "ManufacturerProductFamily" : {
       "description" : "2nd level of a 3 level manufacturer specific product hierarchy.",
       "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.digital_nameplate:3.0.0#manufacturerProductFamily",
-      "allOf" : [ {
-        "$ref" : "#/components/schemas/MultiLanguageTexts"
-      } ]
+      "$ref" : "#/components/schemas/MultiLanguageTexts"
     },
     "ManufacturerProductType" : {
       "description" : "Characteristic to differentiate between different products of a product family or special variants.",
       "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.digital_nameplate:3.0.0#manufacturerProductType",
-      "allOf" : [ {
-        "$ref" : "#/components/schemas/Text"
-      } ]
+      "$ref" : "#/components/schemas/Text"
     },
     "OrderCodeOfManufacturer" : {
       "description" : "Unique combination of numbers and letters used to identify the device for ordering.",
       "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.digital_nameplate:3.0.0#orderCodeOfManufacturer",
-      "allOf" : [ {
-        "$ref" : "#/components/schemas/Text"
-      } ]
+      "$ref" : "#/components/schemas/Text"
     },
     "ProductArticleNumberOfManufacturer" : {
       "description" : "Unique product identifier of the manufacturer.",
       "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.digital_nameplate:3.0.0#productArticleNumberOfManufacturer",
-      "allOf" : [ {
-        "$ref" : "#/components/schemas/Text"
-      } ]
+      "$ref" : "#/components/schemas/Text"
     },
     "SerialNumber" : {
       "description" : "Unique combination of numbers and letters used to identify the device once it has been manufactured.",
       "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.digital_nameplate:3.0.0#serialNumber",
-      "allOf" : [ {
-        "$ref" : "#/components/schemas/Text"
-      } ]
+      "$ref" : "#/components/schemas/Text"
     },
     "YearOfConstruction" : {
       "description" : "Year in which the manufacturing process is completed.",
       "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.digital_nameplate:3.0.0#yearOfConstruction",
-      "allOf" : [ {
-        "$ref" : "#/components/schemas/Text"
-      } ]
+      "$ref" : "#/components/schemas/Text"
     },
     "DateOfManufacture" : {
       "description" : "Date when an item was manufactured.",
       "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.digital_nameplate:3.0.0#dateOfManufacture",
-      "allOf" : [ {
-        "$ref" : "#/components/schemas/Date"
-      } ]
+      "$ref" : "#/components/schemas/Date"
     },
     "HardwareVersion" : {
       "description" : "Version of the hardware supplied with the device.",
       "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.digital_nameplate:3.0.0#hardwareVersion",
-      "allOf" : [ {
-        "$ref" : "#/components/schemas/Text"
-      } ]
+      "$ref" : "#/components/schemas/Text"
     },
     "FirmwareVersion" : {
       "description" : "Version of the firmware supplied with the device.",
       "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.digital_nameplate:3.0.0#firmwareVersion",
-      "allOf" : [ {
-        "$ref" : "#/components/schemas/Text"
-      } ]
+      "$ref" : "#/components/schemas/Text"
     },
     "SoftwareVersion" : {
       "description" : "Version of the software used by the device.",
       "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.digital_nameplate:3.0.0#softwareVersion",
-      "allOf" : [ {
-        "$ref" : "#/components/schemas/Text"
-      } ]
+      "$ref" : "#/components/schemas/Text"
     },
     "CountryOfOrigin" : {
       "description" : "Country where the product was manufactured. Note: Country codes defined accord. to DIN EN ISO 3166-1 alpha-2 codes.",
       "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.digital_nameplate:3.0.0#countryOfOrigin",
-      "allOf" : [ {
-        "$ref" : "#/components/schemas/Text"
-      } ]
+      "$ref" : "#/components/schemas/Text"
     },
     "UniqueFacilityIdentifier" : {
       "description" : "Unique string of characters for the identification of locations or buildings involved in a product’s value chain or used by actors involved in a product’s value chain.",
       "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.digital_nameplate:3.0.0#uniqueFacilityIdentifier",
-      "allOf" : [ {
-        "$ref" : "#/components/schemas/Text"
-      } ]
+      "$ref" : "#/components/schemas/Text"
     },
     "CompanyLogo" : {
       "description" : "A graphic mark used to represent a company, an organisation or a product.",
       "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.digital_nameplate:3.0.0#logoCompany",
-      "allOf" : [ {
-        "$ref" : "#/components/schemas/ResourcePath"
-      } ]
+      "$ref" : "#/components/schemas/ResourcePath"
     },
     "Markings" : {
       "description" : "Markings of the product. Note: CE marking is declared as mandatory according to EU Blue Guide.",
       "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.digital_nameplate:3.0.0#markings",
-      "allOf" : [ {
-        "$ref" : "#/components/schemas/Markings"
-      } ]
+      "$ref" : "#/components/schemas/Markings"
     }
   },
   "required" : [ "URIOfTheProduct", "ManufacturerName", "ManufacturerProductDesignation", "AddressInformation", "OrderCodeOfManufacturer" ]

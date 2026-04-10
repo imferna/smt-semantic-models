@@ -116,9 +116,7 @@
       "GeneralInformationCharacteristic" : {
         "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.generic.technical_data:2.0.0#GeneralInformationCharacteristic",
         "type" : "object",
-        "allOf" : [ {
-          "$ref" : "#/components/schemas/GeneralInformationEntity"
-        } ]
+        "$ref" : "#/components/schemas/GeneralInformationEntity"
       },
       "ReferenceKeyEnum" : {
         "type" : "string",
@@ -227,9 +225,7 @@
       "TechnicalPropertyAreaSet" : {
         "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.generic.technical_data:2.0.0#TechnicalPropertyAreaSet",
         "type" : "object",
-        "allOf" : [ {
-          "$ref" : "#/components/schemas/TechnicalAttributes"
-        } ]
+        "$ref" : "#/components/schemas/TechnicalAttributes"
       },
       "Timestamp" : {
         "type" : "string",
@@ -257,9 +253,7 @@
       "FurtherInformationCharacteristic" : {
         "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.generic.technical_data:2.0.0#FurtherInformationCharacteristic",
         "type" : "object",
-        "allOf" : [ {
-          "$ref" : "#/components/schemas/FurtherInformationEntity"
-        } ]
+        "$ref" : "#/components/schemas/FurtherInformationEntity"
       },
       "SpecificDescriptionEntity" : {
         "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.generic.technical_data:2.0.0#SpecificDescriptionEntity",

@@ -2,15 +2,15 @@
   "@context": {
     "@version": 1.1,
     "schema": "https://schema.org/",
-    "idta-technical_data": "urn:samm:io.admin-shell.idta.generic.technical_data:2.0.0#",
+    "technical_data": "urn:samm:io.admin-shell.idta.generic.technical_data:2.0.0#",
     "TechnicalData": {
-      "@id": "idta-technical_data:TechnicalData",
+      "@id": "technical_data:TechnicalData",
       "@type": "@id"
     },
     "id": "@id",
     "type": "@type",
     "ProductClassifications": {
-      "@id": "idta-technical_data:ProductClassifications",
+      "@id": "technical_data:ProductClassifications",
       "@context": {
         "@version": 1.1,
         "id": "@id",
@@ -20,7 +20,7 @@
           "id": "@id",
           "type": "@type",
           "ProductClassificationSystem": {
-            "@id": "idta-technical_data:ProductClassificationSystem",
+            "@id": "technical_data:ProductClassificationSystem",
             "@context": {
               "@definition": "Common name of the classification system.\nNote: Examples for common names for classification systems are \"ECLASS\" or \"IEC CDD\".",
               "@samm-urn": "urn:samm:io.admin-shell.idta.generic.technical_data:2.0.0#productClassificationSystem"
@@ -28,7 +28,7 @@
             "@type": "schema:string"
           },
           "ClassificationSystemVersion": {
-            "@id": "idta-technical_data:ClassificationSystemVersion",
+            "@id": "technical_data:ClassificationSystemVersion",
             "@context": {
               "@definition": "Common version identifier of the used classification system, in order to distinguish different version of the property dictionary.\nNote: Casing is to be ignored.",
               "@samm-urn": "urn:samm:io.admin-shell.idta.generic.technical_data:2.0.0#classificationSystemVersion"
@@ -36,7 +36,7 @@
             "@type": "schema:string"
           },
           "ClassificationSystemUrl": {
-            "@id": "idta-technical_data:ClassificationSystemUrl",
+            "@id": "technical_data:ClassificationSystemUrl",
             "@context": {
               "@definition": "URL of the used classification system.",
               "@samm-urn": "urn:samm:io.admin-shell.idta.generic.technical_data:2.0.0#classificationSystemUrl"
@@ -44,7 +44,7 @@
             "@type": "schema:string"
           },
           "ProductClassId": {
-            "@id": "idta-technical_data:ProductClassId",
+            "@id": "technical_data:ProductClassId",
             "@context": {
               "@definition": "Class of the associated product or industrial equipment in the classification system. According to the notation of the system.\nNote: Ideally, the Property/valueId is used to reference the IRI/ IRDI of the product class.",
               "@samm-urn": "urn:samm:io.admin-shell.idta.generic.technical_data:2.0.0#productClassId"
@@ -52,7 +52,7 @@
             "@type": "schema:string"
           },
           "ProductClassCodedName": {
-            "@id": "idta-technical_data:ProductClassCodedName",
+            "@id": "technical_data:ProductClassCodedName",
             "@context": {
               "@definition": "Unique class code in a classification hierarchy.",
               "@samm-urn": "urn:samm:io.admin-shell.idta.generic.technical_data:2.0.0#productClassCodedName"
@@ -60,7 +60,7 @@
             "@type": "schema:string"
           },
           "ProductClassName": {
-            "@id": "idta-technical_data:ProductClassName",
+            "@id": "technical_data:ProductClassName",
             "@context": {
               "@definition": "Name of product class in the used classification system.",
               "@samm-urn": "urn:samm:io.admin-shell.idta.generic.technical_data:2.0.0#productClassName"
@@ -69,19 +69,19 @@
             "@type": "schema:object"
           },
           "ReferenceToTechnicalPropertyArea": {
-            "@id": "idta-technical_data:ReferenceToTechnicalPropertyArea",
+            "@id": "technical_data:ReferenceToTechnicalPropertyArea",
             "@context": {
               "@version": 1.1,
               "id": "@id",
               "type": {
-                "@id": "idta-technical_data:type",
+                "@id": "technical_data:type",
                 "@context": {
                   "@samm-urn": "urn:samm:io.admin-shell.idta.shared:3.1.0#type"
                 },
                 "@type": "schema:string"
               },
               "keys": {
-                "@id": "idta-technical_data:keys",
+                "@id": "technical_data:keys",
                 "@context": {
                   "@version": 1.1,
                   "id": "@id",
@@ -91,14 +91,14 @@
                     "id": "@id",
                     "type": "@type",
                     "key": {
-                      "@id": "idta-technical_data:key",
+                      "@id": "technical_data:key",
                       "@context": {
                         "@samm-urn": "urn:samm:io.admin-shell.idta.shared:3.1.0#key"
                       },
                       "@type": "schema:string"
                     },
                     "value": {
-                      "@id": "idta-technical_data:value",
+                      "@id": "technical_data:value",
                       "@context": {
                         "@definition": "Describes a Property which contains plain text. This is intended exclusively for human readable strings, not for identifiers, measurement values, etc.",
                         "@samm-urn": "urn:samm:io.admin-shell.idta.shared:3.1.0#keyValue"
@@ -121,7 +121,7 @@
       "@container": "@list"
     },
     "SpecificDescriptions": {
-      "@id": "idta-technical_data:SpecificDescriptions",
+      "@id": "technical_data:SpecificDescriptions",
       "@context": {
         "@version": 1.1,
         "id": "@id",

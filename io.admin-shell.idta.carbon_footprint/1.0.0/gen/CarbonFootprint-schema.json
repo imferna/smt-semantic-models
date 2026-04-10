@@ -123,9 +123,7 @@
       "PhoneCharacteristic" : {
         "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.contact_information:1.0.0#PhoneCharacteristic",
         "type" : "object",
-        "allOf" : [ {
-          "$ref" : "#/components/schemas/PhoneEntity"
-        } ]
+        "$ref" : "#/components/schemas/PhoneEntity"
       },
       "FaxEntity" : {
         "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.contact_information:1.0.0#FaxEntity",
@@ -147,9 +145,7 @@
       "FaxCharacteristic" : {
         "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.contact_information:1.0.0#FaxCharacteristic",
         "type" : "object",
-        "allOf" : [ {
-          "$ref" : "#/components/schemas/FaxEntity"
-        } ]
+        "$ref" : "#/components/schemas/FaxEntity"
       },
       "EmailEntity" : {
         "description" : "E-mail address and encryption method.",
@@ -182,9 +178,7 @@
       "EmailCharacteristic" : {
         "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.contact_information:1.0.0#EmailCharacteristic",
         "type" : "object",
-        "allOf" : [ {
-          "$ref" : "#/components/schemas/EmailEntity"
-        } ]
+        "$ref" : "#/components/schemas/EmailEntity"
       },
       "IpCommunicationChannelEntity" : {
         "description" : "IP-based communication channels, e.g. chat or video call.",
@@ -339,9 +333,7 @@
       "ContactAddressCharacteristic" : {
         "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.carbon_footprint:1.0.0#ContactAddressCharacteristic",
         "type" : "object",
-        "allOf" : [ {
-          "$ref" : "#/components/schemas/ContactInformation"
-        } ]
+        "$ref" : "#/components/schemas/ContactInformation"
       },
       "Timestamp" : {
         "type" : "string",
@@ -458,9 +450,7 @@
       "ExternalPcfApiCharacteristic" : {
         "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.carbon_footprint:1.0.0#ExternalPcfApiCharacteristic",
         "type" : "object",
-        "allOf" : [ {
-          "$ref" : "#/components/schemas/ExternalPcfApiEntity"
-        } ]
+        "$ref" : "#/components/schemas/ExternalPcfApiEntity"
       },
       "ProductOrSectorSpecificPcfInformationEntity" : {
         "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.carbon_footprint:1.0.0#ProductOrSectorSpecificPcfInformationEntity",
@@ -470,9 +460,7 @@
       "ProductOrSectorSpecificPcfInformationCharacteristic" : {
         "x-samm-aspect-model-urn" : "urn:samm:io.admin-shell.idta.carbon_footprint:1.0.0#ProductOrSectorSpecificPcfInformationCharacteristic",
         "type" : "object",
-        "allOf" : [ {
-          "$ref" : "#/components/schemas/ProductOrSectorSpecificPcfInformationEntity"
-        } ]
+        "$ref" : "#/components/schemas/ProductOrSectorSpecificPcfInformationEntity"
       },
       "ProductOrSectorSpecificCarbonFootprintEntity" : {
         "description" : "Product Carbon Footprint, which is determined in accordance with sector or product group-specific rules or guidelines and covers the life cycle or parts of a product life cycle.",

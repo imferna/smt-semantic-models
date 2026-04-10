@@ -1,0 +1,563 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "schema": "https://schema.org/",
+    "handover_documentation": "urn:samm:io.admin-shell.idta.handover_documentation:2.0.0#",
+    "HandoverDocumentation": {
+      "@id": "handover_documentation:HandoverDocumentation",
+      "@type": "@id"
+    },
+    "id": "@id",
+    "type": "@type",
+    "Documents": {
+      "@id": "handover_documentation:Documents",
+      "@context": {
+        "@version": 1.1,
+        "id": "@id",
+        "type": "@type",
+        "@context": {
+          "@version": 1.1,
+          "id": "@id",
+          "type": "@type",
+          "DocumentIds": {
+            "@id": "handover_documentation:DocumentIds",
+            "@context": {
+              "@version": 1.1,
+              "id": "@id",
+              "type": "@type",
+              "@context": {
+                "@version": 1.1,
+                "id": "@id",
+                "type": "@type",
+                "DocumentDomainId": {
+                  "@id": "handover_documentation:DocumentDomainId",
+                  "@context": {
+                    "@definition": "Identification of the domain in which the given DocumentId is unique. The domain ID can e.g., be the name or acronym of the providing organisation.",
+                    "@samm-urn": "urn:samm:io.admin-shell.idta.handover_documentation:2.0.0#documentDomainId"
+                  },
+                  "@type": "schema:string"
+                },
+                "DocumentIdentifier": {
+                  "@id": "handover_documentation:DocumentIdentifier",
+                  "@context": {
+                    "@definition": "Alphanumeric character sequence uniquely identifying a document.",
+                    "@samm-urn": "urn:samm:io.admin-shell.idta.handover_documentation:2.0.0#documentIdentifier"
+                  },
+                  "@type": "schema:string"
+                },
+                "DocumentIsPrimary": {
+                  "@id": "handover_documentation:DocumentIsPrimary",
+                  "@context": {
+                    "@definition": "Flag indicating that a DocumentId within a collection of at least two DocumentId`s is the 'primary' identifier for the document. This is the preferred ID of the document (commonly from the point of view of the owner of the asset).",
+                    "@samm-urn": "urn:samm:io.admin-shell.idta.handover_documentation:2.0.0#documentIsPrimary"
+                  },
+                  "@type": "schema:boolean"
+                }
+              },
+              "@definition": "Set of document identifiers for the Document. One ID in this collection should be used as a preferred ID (see isPrimary).",
+              "@samm-urn": "urn:samm:io.admin-shell.idta.handover_documentation:2.0.0#documentIds"
+            },
+            "@container": "@list"
+          },
+          "DocumentClassifications": {
+            "@id": "handover_documentation:DocumentClassifications",
+            "@context": {
+              "@version": 1.1,
+              "id": "@id",
+              "type": "@type",
+              "@context": {
+                "@version": 1.1,
+                "id": "@id",
+                "type": "@type",
+                "ClassId": {
+                  "@id": "handover_documentation:ClassId",
+                  "@context": {
+                    "@definition": "Unique ID of the document class within a classficationsystem.",
+                    "@samm-urn": "urn:samm:io.admin-shell.idta.handover_documentation:2.0.0#classId"
+                  },
+                  "@type": "schema:string"
+                },
+                "ClassName": {
+                  "@id": "handover_documentation:ClassName",
+                  "@context": {
+                    "@definition": "Type of document.",
+                    "@samm-urn": "urn:samm:io.admin-shell.idta.handover_documentation:2.0.0#className"
+                  },
+                  "@container": "@list",
+                  "@type": "schema:object"
+                },
+                "ClassificationSystem": {
+                  "@id": "handover_documentation:ClassificationSystem",
+                  "@context": {
+                    "@definition": "Classification of a document according to its purpose or the information it contains.",
+                    "@samm-urn": "urn:samm:io.admin-shell.idta.handover_documentation:2.0.0#classificationSystem"
+                  },
+                  "@type": "schema:string"
+                }
+              },
+              "@definition": "Set of information for describing the classification of the Document according to ClassificationSystems.\nConstraint: at least one classification according to VDI 2770 shall be provided.",
+              "@samm-urn": "urn:samm:io.admin-shell.idta.handover_documentation:2.0.0#documentClassifications"
+            },
+            "@container": "@list"
+          },
+          "DocumentVersions": {
+            "@id": "handover_documentation:DocumentVersions",
+            "@context": {
+              "@version": 1.1,
+              "id": "@id",
+              "type": "@type",
+              "@context": {
+                "@version": 1.1,
+                "id": "@id",
+                "type": "@type",
+                "Language": {
+                  "@id": "handover_documentation:Language",
+                  "@context": {
+                    "@samm-urn": "urn:samm:io.admin-shell.idta.shared:3.1.0#languages"
+                  },
+                  "@container": "@list",
+                  "@type": "schema:string"
+                },
+                "Version": {
+                  "@id": "handover_documentation:Version",
+                  "@context": {
+                    "@definition": "Identifier of the version of this document.",
+                    "@samm-urn": "urn:samm:io.admin-shell.idta.handover_documentation:2.0.0#version"
+                  },
+                  "@type": "schema:string"
+                },
+                "Title": {
+                  "@id": "handover_documentation:Title",
+                  "@context": {
+                    "@definition": "Title of this document.",
+                    "@samm-urn": "urn:samm:io.admin-shell.idta.handover_documentation:2.0.0#title"
+                  },
+                  "@container": "@list",
+                  "@type": "schema:object"
+                },
+                "Subtitle": {
+                  "@id": "handover_documentation:Subtitle",
+                  "@context": {
+                    "@definition": "Denotes the focus of the document and has a referential or communicative function, which is to refer to the content, subject matter or theme of the document\nConstraint: for each language-dependent Title, a Summary and at least one KeyWord shall exist for the given language.",
+                    "@samm-urn": "urn:samm:io.admin-shell.idta.handover_documentation:2.0.0#subtitle"
+                  },
+                  "@container": "@list",
+                  "@type": "schema:object"
+                },
+                "Description": {
+                  "@id": "handover_documentation:Description",
+                  "@context": {
+                    "@definition": "Plain text characterizing the content of the document.",
+                    "@samm-urn": "urn:samm:io.admin-shell.idta.handover_documentation:2.0.0#description"
+                  },
+                  "@container": "@list",
+                  "@type": "schema:object"
+                },
+                "KeyWords": {
+                  "@id": "handover_documentation:KeyWords",
+                  "@context": {
+                    "@definition": "Keywords that describe this document.",
+                    "@samm-urn": "urn:samm:io.admin-shell.idta.handover_documentation:2.0.0#keywords"
+                  },
+                  "@container": "@list",
+                  "@type": "schema:object"
+                },
+                "StatusSetDate": {
+                  "@id": "handover_documentation:StatusSetDate",
+                  "@context": {
+                    "@definition": "Date when the document status was set.",
+                    "@samm-urn": "urn:samm:io.admin-shell.idta.handover_documentation:2.0.0#statusSetDate"
+                  },
+                  "@type": "schema:string"
+                },
+                "StatusValue": {
+                  "@id": "handover_documentation:StatusValue",
+                  "@context": {
+                    "@definition": "Each document version represents a point in time in the document life cycle. This status value refers to the milestones in the document life cycle. The following two values should be used for the application of this guideline: InReview (under review), Released (released).",
+                    "@samm-urn": "urn:samm:io.admin-shell.idta.handover_documentation:2.0.0#statusValue"
+                  },
+                  "@type": "schema:string"
+                },
+                "OrganizationShortName": {
+                  "@id": "handover_documentation:OrganizationShortName",
+                  "@context": {
+                    "@definition": "Organization name in short form.",
+                    "@samm-urn": "urn:samm:io.admin-shell.idta.handover_documentation:2.0.0#organizationName"
+                  },
+                  "@type": "schema:string"
+                },
+                "OrganizationOfficialName": {
+                  "@id": "handover_documentation:OrganizationOfficialName",
+                  "@context": {
+                    "@definition": "Official name of the organization.",
+                    "@samm-urn": "urn:samm:io.admin-shell.idta.handover_documentation:2.0.0#organizationOfficialName"
+                  },
+                  "@type": "schema:string"
+                },
+                "RefersToEntities": {
+                  "@id": "handover_documentation:RefersToEntities",
+                  "@context": {
+                    "@version": 1.1,
+                    "id": "@id",
+                    "type": "@type",
+                    "@context": {
+                      "@version": 1.1,
+                      "id": "@id",
+                      "type": {
+                        "@id": "handover_documentation:type",
+                        "@context": {
+                          "@samm-urn": "urn:samm:io.admin-shell.idta.shared:3.1.0#type"
+                        },
+                        "@type": "schema:string"
+                      },
+                      "keys": {
+                        "@id": "handover_documentation:keys",
+                        "@context": {
+                          "@version": 1.1,
+                          "id": "@id",
+                          "type": "@type",
+                          "@context": {
+                            "@version": 1.1,
+                            "id": "@id",
+                            "type": "@type",
+                            "key": {
+                              "@id": "handover_documentation:key",
+                              "@context": {
+                                "@samm-urn": "urn:samm:io.admin-shell.idta.shared:3.1.0#key"
+                              },
+                              "@type": "schema:string"
+                            },
+                            "value": {
+                              "@id": "handover_documentation:value",
+                              "@context": {
+                                "@definition": "Describes a Property which contains plain text. This is intended exclusively for human readable strings, not for identifiers, measurement values, etc.",
+                                "@samm-urn": "urn:samm:io.admin-shell.idta.shared:3.1.0#keyValue"
+                              },
+                              "@type": "schema:string"
+                            }
+                          },
+                          "@samm-urn": "urn:samm:io.admin-shell.idta.shared:3.1.0#keys"
+                        },
+                        "@container": "@list"
+                      }
+                    },
+                    "@definition": "Forms a generic refers to-relationship to another document or document version. They have a loose relationship\n\nConstraint: reference targets a 'Document' or a 'DocumentVersion'.",
+                    "@samm-urn": "urn:samm:io.admin-shell.idta.handover_documentation:2.0.0#refersToEntities"
+                  },
+                  "@container": "@list"
+                },
+                "BasedOnReferences": {
+                  "@id": "handover_documentation:BasedOnReferences",
+                  "@context": {
+                    "@version": 1.1,
+                    "id": "@id",
+                    "type": "@type",
+                    "@context": {
+                      "@version": 1.1,
+                      "id": "@id",
+                      "type": {
+                        "@id": "handover_documentation:type",
+                        "@context": {
+                          "@samm-urn": "urn:samm:io.admin-shell.idta.shared:3.1.0#type"
+                        },
+                        "@type": "schema:string"
+                      },
+                      "keys": {
+                        "@id": "handover_documentation:keys",
+                        "@context": {
+                          "@version": 1.1,
+                          "id": "@id",
+                          "type": "@type",
+                          "@context": {
+                            "@version": 1.1,
+                            "id": "@id",
+                            "type": "@type",
+                            "key": {
+                              "@id": "handover_documentation:key",
+                              "@context": {
+                                "@samm-urn": "urn:samm:io.admin-shell.idta.shared:3.1.0#key"
+                              },
+                              "@type": "schema:string"
+                            },
+                            "value": {
+                              "@id": "handover_documentation:value",
+                              "@context": {
+                                "@definition": "Describes a Property which contains plain text. This is intended exclusively for human readable strings, not for identifiers, measurement values, etc.",
+                                "@samm-urn": "urn:samm:io.admin-shell.idta.shared:3.1.0#keyValue"
+                              },
+                              "@type": "schema:string"
+                            }
+                          },
+                          "@samm-urn": "urn:samm:io.admin-shell.idta.shared:3.1.0#keys"
+                        },
+                        "@container": "@list"
+                      }
+                    },
+                    "@definition": "Forms a based on-relationship to another document or document version. Typically states, that the content of the document bases on another document (e.g. specification requirements). Both have a strong relationship\n\nConstraint: reference targets a  'Document' or a 'DocumentVersion'.",
+                    "@samm-urn": "urn:samm:io.admin-shell.idta.handover_documentation:2.0.0#basedOnReferences"
+                  },
+                  "@container": "@list"
+                },
+                "TranslationOfEntities": {
+                  "@id": "handover_documentation:TranslationOfEntities",
+                  "@context": {
+                    "@version": 1.1,
+                    "id": "@id",
+                    "type": "@type",
+                    "@context": {
+                      "@version": 1.1,
+                      "id": "@id",
+                      "type": {
+                        "@id": "handover_documentation:type",
+                        "@context": {
+                          "@samm-urn": "urn:samm:io.admin-shell.idta.shared:3.1.0#type"
+                        },
+                        "@type": "schema:string"
+                      },
+                      "keys": {
+                        "@id": "handover_documentation:keys",
+                        "@context": {
+                          "@version": 1.1,
+                          "id": "@id",
+                          "type": "@type",
+                          "@context": {
+                            "@version": 1.1,
+                            "id": "@id",
+                            "type": "@type",
+                            "key": {
+                              "@id": "handover_documentation:key",
+                              "@context": {
+                                "@samm-urn": "urn:samm:io.admin-shell.idta.shared:3.1.0#key"
+                              },
+                              "@type": "schema:string"
+                            },
+                            "value": {
+                              "@id": "handover_documentation:value",
+                              "@context": {
+                                "@definition": "Describes a Property which contains plain text. This is intended exclusively for human readable strings, not for identifiers, measurement values, etc.",
+                                "@samm-urn": "urn:samm:io.admin-shell.idta.shared:3.1.0#keyValue"
+                              },
+                              "@type": "schema:string"
+                            }
+                          },
+                          "@samm-urn": "urn:samm:io.admin-shell.idta.shared:3.1.0#keys"
+                        },
+                        "@container": "@list"
+                      }
+                    },
+                    "@definition": "Forms a translation of-relationship to another document or document version. Both have a strong relationship\n\nConstraint: the (language-independent) content must be identical in both Documents or DocumentVersions.\n\nConstraint: reference targets a 'Document' or a 'DocumentVersion'.",
+                    "@samm-urn": "urn:samm:io.admin-shell.idta.handover_documentation:2.0.0#translationOfEntities"
+                  },
+                  "@container": "@list"
+                },
+                "DigitalFiles": {
+                  "@id": "handover_documentation:DigitalFiles",
+                  "@context": {
+                    "@samm-urn": "urn:samm:io.admin-shell.idta.handover_documentation:2.0.0#digitalFiles",
+                    "@definition": "MIME-Type, file name and file contents\n\nConstraint: at least one PDF/A file type shall be provided.\nNote: each DigitalFile represents the same content or Document version, but can be provided in different technical formats (PDF, PDFA, html, etc.) or by a link."
+                  },
+                  "@container": "@list",
+                  "@type": "schema:object"
+                },
+                "PreviewFile": {
+                  "@id": "handover_documentation:PreviewFile",
+                  "@context": {
+                    "@version": 1.1,
+                    "id": "@id",
+                    "type": "@type",
+                    "value": {
+                      "@id": "handover_documentation:value",
+                      "@context": {
+                        "@definition": "Path and name of the file (with file extension).\n\nThe path can be absolute or relative.",
+                        "@samm-urn": "urn:samm:io.admin-shell.idta.shared:3.1.0#resourceValue"
+                      },
+                      "@type": "schema:string"
+                    },
+                    "contentType": {
+                      "@id": "handover_documentation:contentType",
+                      "@context": {
+                        "@definition": "Content type of the content of the file or blob.",
+                        "@samm-urn": "urn:samm:io.admin-shell.idta.shared:3.1.0#contentType"
+                      },
+                      "@type": "schema:string"
+                    },
+                    "@definition": "Provides a preview image of the Document Version, e.g. first page, in a commonly used image format and low resolution.",
+                    "@samm-urn": "urn:samm:io.admin-shell.idta.handover_documentation:2.0.0#previewFile"
+                  }
+                }
+              },
+              "@definition": "Information elements of individual VDI 2770 DocumentVersion entities.\nNote: at the time of handover, this collection shall include at least one DocumentVersion.",
+              "@samm-urn": "urn:samm:io.admin-shell.idta.handover_documentation:2.0.0#documentVersions"
+            },
+            "@container": "@list"
+          },
+          "DocumentedEntities": {
+            "@id": "handover_documentation:DocumentedEntities",
+            "@context": {
+              "@version": 1.1,
+              "id": "@id",
+              "type": "@type",
+              "@context": {
+                "@version": 1.1,
+                "id": "@id",
+                "type": {
+                  "@id": "handover_documentation:type",
+                  "@context": {
+                    "@samm-urn": "urn:samm:io.admin-shell.idta.shared:3.1.0#type"
+                  },
+                  "@type": "schema:string"
+                },
+                "keys": {
+                  "@id": "handover_documentation:keys",
+                  "@context": {
+                    "@version": 1.1,
+                    "id": "@id",
+                    "type": "@type",
+                    "@context": {
+                      "@version": 1.1,
+                      "id": "@id",
+                      "type": "@type",
+                      "key": {
+                        "@id": "handover_documentation:key",
+                        "@context": {
+                          "@samm-urn": "urn:samm:io.admin-shell.idta.shared:3.1.0#key"
+                        },
+                        "@type": "schema:string"
+                      },
+                      "value": {
+                        "@id": "handover_documentation:value",
+                        "@context": {
+                          "@definition": "Describes a Property which contains plain text. This is intended exclusively for human readable strings, not for identifiers, measurement values, etc.",
+                          "@samm-urn": "urn:samm:io.admin-shell.idta.shared:3.1.0#keyValue"
+                        },
+                        "@type": "schema:string"
+                      }
+                    },
+                    "@samm-urn": "urn:samm:io.admin-shell.idta.shared:3.1.0#keys"
+                  },
+                  "@container": "@list"
+                }
+              },
+              "@definition": "Documented Entities.",
+              "@samm-urn": "urn:samm:io.admin-shell.idta.handover_documentation:2.0.0#documentedEntities"
+            },
+            "@container": "@list"
+          }
+        },
+        "@definition": "A set of relevant documents to hand over to customers for documentation purposes.",
+        "@samm-urn": "urn:samm:io.admin-shell.idta.handover_documentation:2.0.0#documents"
+      },
+      "@container": "@list"
+    },
+    "Entities": {
+      "@id": "handover_documentation:Entities",
+      "@context": {
+        "@version": 1.1,
+        "id": "@id",
+        "type": "@type",
+        "@context": {
+          "@version": 1.1,
+          "id": "@id",
+          "type": "@type",
+          "specificAssetIds": {
+            "@id": "handover_documentation:specificAssetIds",
+            "@context": {
+              "@version": 1.1,
+              "id": "@id",
+              "type": "@type",
+              "@context": {
+                "@version": 1.1,
+                "id": "@id",
+                "type": "@type",
+                "externalSubjectId": {
+                  "@id": "handover_documentation:externalSubjectId",
+                  "@context": {
+                    "@version": 1.1,
+                    "id": "@id",
+                    "type": {
+                      "@id": "handover_documentation:type",
+                      "@context": {
+                        "@samm-urn": "urn:samm:io.admin-shell.idta.shared:3.1.0#TypeExternalReference"
+                      },
+                      "@type": "schema:string"
+                    },
+                    "keys": {
+                      "@id": "handover_documentation:keys",
+                      "@context": {
+                        "@version": 1.1,
+                        "id": "@id",
+                        "type": "@type",
+                        "@context": {
+                          "@version": 1.1,
+                          "id": "@id",
+                          "type": "@type",
+                          "key": {
+                            "@id": "handover_documentation:key",
+                            "@context": {
+                              "@samm-urn": "urn:samm:io.admin-shell.idta.shared:3.1.0#ExternalReferenceKey"
+                            },
+                            "@type": "schema:string"
+                          },
+                          "value": {
+                            "@id": "handover_documentation:value",
+                            "@context": {
+                              "@definition": "Describes a Property which contains plain text. This is intended exclusively for human readable strings, not for identifiers, measurement values, etc.",
+                              "@samm-urn": "urn:samm:io.admin-shell.idta.shared:3.1.0#ExternalReferenceKeyValue"
+                            },
+                            "@type": "schema:string"
+                          }
+                        },
+                        "@samm-urn": "urn:samm:io.admin-shell.idta.shared:3.1.0#KeysExternalReference"
+                      },
+                      "@container": "@list"
+                    },
+                    "@definition": "The unique ID of the (external) subject the specific asset ID value belongs to or has meaning to.",
+                    "@samm-urn": "urn:samm:io.admin-shell.idta.shared:3.1.0#externalSubjectId"
+                  }
+                },
+                "value": {
+                  "@id": "handover_documentation:value",
+                  "@context": {
+                    "@definition": "The value of the specific asset identifier with the corresponding name.",
+                    "@samm-urn": "urn:samm:io.admin-shell.idta.shared:3.1.0#specificAssetIdValue"
+                  },
+                  "@type": "schema:string"
+                },
+                "name": {
+                  "@id": "handover_documentation:name",
+                  "@context": {
+                    "@definition": "Name of the asset identifier.",
+                    "@samm-urn": "urn:samm:io.admin-shell.idta.shared:3.1.0#specificAssetIdName"
+                  },
+                  "@type": "schema:string"
+                }
+              },
+              "@samm-urn": "urn:samm:io.admin-shell.idta.shared:3.1.0#specificAssetIds"
+            },
+            "@container": "@list"
+          },
+          "globalAssetId": {
+            "@id": "handover_documentation:globalAssetId",
+            "@context": {
+              "@definition": "Globally unique identifier of an asset.",
+              "@samm-urn": "urn:samm:io.admin-shell.idta.shared:3.1.0#globalAssetId"
+            },
+            "@type": "schema:string"
+          },
+          "entityType": {
+            "@id": "handover_documentation:entityType",
+            "@context": {
+              "@samm-urn": "urn:samm:io.admin-shell.idta.shared:3.1.0#entityType"
+            },
+            "@type": "schema:string"
+          }
+        },
+        "@definition": "States that the described Entity is an important entity for documentation of the superordinate Asset of the Asset Administration Shell.\nNote: typically, such Entities are well-identified sub-parts of the Asset, such as supplier parts delivered to the manufacturer of the Asset.\nNote: these Entities are the target of the 'DocumentedEntity'-ReferenceElements of the particular Documents contained in this Submodel. This mechanism substitutes the ObjectId-provision of VDI 2770 (see section 2.2).\nNote: if the described Entity has an own Asset Administration Shell, the SelfManaged-flag and AssetId-reference of the Entity shall be set accordingly.",
+        "@samm-urn": "urn:samm:io.admin-shell.idta.handover_documentation:2.0.0#entities"
+      },
+      "@container": "@list"
+    },
+    "@definition": "Handover Documentation defines a set meta data for the handover of documentation from the manufacturer to the operator for industrial equipment.",
+    "@samm-urn": "urn:samm:io.admin-shell.idta.handover_documentation:2.0.0#HandoverDocumentation"
+  }
+}

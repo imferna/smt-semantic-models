@@ -1,0 +1,60 @@
+@prefix samm: <urn:samm:org.eclipse.esmf.samm:meta-model:2.2.0#> .
+@prefix samm-c: <urn:samm:org.eclipse.esmf.samm:characteristic:2.2.0#> .
+@prefix samm-e: <urn:samm:org.eclipse.esmf.samm:entity:2.2.0#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix shared: <urn:samm:io.admin-shell.idta.shared:3.1.0#> .
+@prefix : <urn:samm:io.admin-shell.i3b.manufacturing_capability:1.0.0#> .
+
+:BulkyPartManufacturingCapability a samm:Aspect ;
+   samm:properties ( :capabilities ) ;
+   samm:operations ( :operation1 ) ;
+   samm:events ( ) .
+
+:capabilities a samm:Property ;
+   samm:preferredName "Capabilities"@en ;
+   samm:characteristic :CapabilityCharacteristic .
+
+:operation1 a samm:Operation ;
+   samm:input ( :inputProperty ) ;
+   samm:output :outputProperty .
+
+:CapabilityCharacteristic a samm-c:Set ;
+   samm:preferredName "Capability Characteristic"@en ;
+   samm:dataType :CapabilityEntity .
+
+:CapabilityEntity a samm:Entity ;
+   samm:preferredName "Capability Entity"@en ;
+   samm:properties ( :property1 :capabilityLabel ) .
+
+:capabilityLabel a samm:Property ;
+   samm:preferredName "Capability Label"@en ;
+   samm:characteristic :CapabilityLabelCharacteristic ;
+   samm:exampleValue "boring" .
+
+:CapabilityLabelCharacteristic a samm:Characteristic ;
+   samm:preferredName "Capability Label Characteristic"@en ;
+   samm:dataType xsd:string .
+
+:inputProperty a samm:Property ;
+   samm:preferredName "Input Property"@en ;
+   samm:characteristic :InputPropertyCharacteristic ;
+   samm:exampleValue "2"^^xsd:double .
+
+:outputProperty a samm:Property ;
+   samm:preferredName "Output Property"@en ;
+   samm:characteristic :OutputPropertyCharacteristic ;
+   samm:exampleValue "4"^^xsd:double .
+
+:InputPropertyCharacteristic a samm:Characteristic ;
+   samm:preferredName "Input Property Characteristic"@en ;
+   samm:dataType xsd:double .
+
+:OutputPropertyCharacteristic a samm:Characteristic ;
+   samm:preferredName "Output Property Characteristic"@en ;
+   samm:dataType xsd:double .
+
+:property1 a samm:Property ;
+   samm:characteristic shared:RelationshipElementType .
+
